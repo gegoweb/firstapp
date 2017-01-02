@@ -44,19 +44,37 @@
 
 <body>
     <div class="app">
-        <h1>Hello PhoneGap</h1>
+        <header>
+
+        </header>
+        <h1></h1>
+
+        <div class="results results-grid">
+            <div>
+                <span class="label">Current Acceleration</span>
+                <span id="current_acceleration" class="value">0</span>
+            </div>
+            <div>
+                <span class="label">Maximum Acceleration</span>
+                <span id="max_acceleration" class="value">0</span>
+            </div>
+            <div style="width: 100%">
+                <span class="label">Latitude</span>
+                <span id="latitude" class="value">0</span>
+            </div>
+            <div style="width: 100%">
+                <span class="label">Longitude</span>
+                <span id="longitude" class="value">0</span>
+            </div>
+        </div>
+
         <div id="deviceready" class="blink">
             <p class="event listening">Connecting to Device</p>
             <p class="event received">Device is Ready</p>
         </div>
-        <div id="geolocation">
-            Geolocation info
-        </div>
-        <div id="acceleration">
-            <div class="acc-x">Acceleration-X: <span id="acc_x"></span> </div>
-            <div class="acc-y">Acceleration-Y: <span id="acc_y"></span> </div>
-            <div class="acc-z">Acceleration-Z: <span id="acc_z"></span> </div>
-        </div>
+        <!--<div id="geolocation">-->
+            <!--Geolocation info-->
+        <!--</div>-->
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
